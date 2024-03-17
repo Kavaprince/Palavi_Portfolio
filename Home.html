@@ -27,6 +27,9 @@
                             <a href="Home.html">Home</a>
                         </li>
                         <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
                             <a href="DavidPalavi_CV.pdf">Resume</a>
                         </li>
                         <li>
@@ -37,6 +40,12 @@
             </div>
         </div>
     </header>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        </script>
     <section id="slide-carousel">
         <div class="slider">
             <div class="portfolio-container">
@@ -66,6 +75,51 @@
                             <img src="image/Dave3.webp" alt="">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+    <div class="portfolio-container">
+        <div class="text-wrap">
+            <h2 class="main-title">My Skills</h2>
+            <h2 class="hover-title">My Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>C++</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>JAVA</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>PHP</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 58%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>PYTHON</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 40%;"></div>
                 </div>
             </div>
         </div>
