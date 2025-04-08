@@ -519,3 +519,51 @@ header .portfolio-row.header-wrap {
 .project-link:hover {
   background-color: #e04848;
 }
+
+/* Scrollable Portfolio Section */
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-row {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  padding: 10px 0; /* Padding to avoid overlap with buttons */
+}
+
+.project-card {
+  flex: 0 0 auto; /* Ensure cards do not shrink or stretch */
+  margin-right: 15px; /* Space between project cards */
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #333; /* Matches dark theme */
+  color: var(--color1);
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #555; /* Slightly lighter for hover effect */
+}
+
+.scroll-btn.left {
+  left: -25px; /* Position to the left */
+}
+
+.scroll-btn.right {
+  right: -25px; /* Position to the right */
+}
