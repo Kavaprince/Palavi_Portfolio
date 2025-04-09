@@ -292,11 +292,16 @@ header .portfolio-row.header-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
 }
 
 .skill-card {
-  width: 30%;
+  flex: 0 0 auto; /* Prevent shrinking, allow horizontal layout */
+  width: 160px;
   margin-bottom: 2rem;
+  text-align: center;
+  margin-right: 50px; /* Space between skill cards */
 }
 
 .skill-bar {
@@ -305,6 +310,7 @@ header .portfolio-row.header-wrap {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .skill-percentage {
@@ -501,6 +507,7 @@ header .portfolio-row.header-wrap {
   color: var(--color2);
   margin-bottom: 1rem;
   font-family: "Poppins", sans-serif; /* Added */
+  text-wrap: wrap;
 }
 
 .project-link {
@@ -523,8 +530,19 @@ header .portfolio-row.header-wrap {
 /* Scrollable Portfolio Section */
 .scroll-container {
   position: relative;
-  display: flex;
   align-items: center;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  /* Prevent text from wrapping */
+  /* Optional: Add a scrollbar */
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on touch devices */
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  /* Hide scrollbar (for most browsers) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
 }
 
 .portfolio-row {
@@ -539,31 +557,8 @@ header .portfolio-row.header-wrap {
   margin-right: 15px; /* Space between project cards */
 }
 
-/* Scroll Buttons */
-.scroll-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #333; /* Matches dark theme */
-  color: var(--color1);
-  border: none;
-  padding: 10px 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease;
-}
-
-.scroll-btn:hover {
-  background-color: #555; /* Slightly lighter for hover effect */
-}
-
-.scroll-btn.left {
-  left: -25px; /* Position to the left */
-}
-
-.scroll-btn.right {
-  right: -25px; /* Position to the right */
+.slide {
+  display: inline-block; /* Or flex-item, grid-item, etc. */
+  padding: 20px;
+  /* Add any other styling you need */
 }

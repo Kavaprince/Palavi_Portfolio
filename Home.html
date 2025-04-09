@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Design</title>
+
+    <!-- Font Awesome Icons -->
     <script
       src="https://kit.fontawesome.com/ae360af17e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -22,7 +26,7 @@
       <div class="portfolio-container">
         <div class="portfolio-row header-wrap">
           <div class="brand-name">
-            <a href="#" class="logo">David john Palavi</a>
+            <a href="#" class="logo">David John Palavi</a>
           </div>
           <div class="hamburger">
             <i class="fa-solid fa-bars"></i>
@@ -62,11 +66,18 @@
                   <h2 class="hover-title">David</h2>
                 </div>
                 <p>
-                  Hailing proudly from Vanuatu. I studied software engineering
-                  at the University of the South Pacific in Fiji. Explore my
-                  world, skills, and culture. Join me on this journey. Thanks
-                  for visiting!
+                  I'm a passionate software developer with a knack for creating
+                  engaging web applications. I love turning ideas into reality
+                  through code. My journey in tech has been exciting, and I'm
+                  always eager to learn and grow. I believe in the power of
+                  technology to make a difference in people's lives.
+                  <br /><br />
+                  I'm from the beautiful islands of Vanuatu and studied Software
+                  Engineering at USP in Fiji. Whether it's a learning platform,
+                  a content-sharing app, or something new — I aim to build tools
+                  that truly help people. Thanks for visiting!
                 </p>
+
                 <div class="download-resume">
                   <a href="DP_CV.pdf" target="_blank">Download CV</a>
                 </div>
@@ -86,44 +97,108 @@
     <section id="skills">
       <div class="portfolio-container">
         <div class="text-wrap">
-          <h2 class="main-title">My Skills</h2>
-          <h2 class="hover-title">My Skills</h2>
+          <h2 class="main-title">Skills</h2>
+          <h2 class="hover-title">Skills</h2>
         </div>
-        <div class="skills-container">
-          <div class="skill-card">
-            <h3>C++</h3>
-            <div class="skill-bar">
-              <div class="skill-percentage" style="width: 70%"></div>
-            </div>
-          </div>
-          <div class="skill-card">
+
+        <!-- Horizontal scroll container -->
+        <div
+          class="scroll-container"
+          style="
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            gap: 20px;
+          "
+        >
+          <!-- Existing Skill Cards -->
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <i class="fab fa-html5 fa-8x" style="color: #e34c26"></i>
             <h3>HTML5</h3>
             <div class="skill-bar">
               <div class="skill-percentage" style="width: 70%"></div>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>CSS</h3>
+
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <i class="fab fa-css3-alt fa-8x" style="color: #264de4"></i>
+            <h3>CSS3</h3>
             <div class="skill-bar">
               <div class="skill-percentage" style="width: 70%"></div>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>JAVA</h3>
+
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <i class="fab fa-java fa-8x" style="color: #007396"></i>
+            <h3>Java</h3>
             <div class="skill-bar">
               <div class="skill-percentage" style="width: 60%"></div>
             </div>
           </div>
-          <div class="skill-card">
+
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <i class="fab fa-php fa-8x" style="color: #8892be"></i>
             <h3>PHP</h3>
             <div class="skill-bar">
               <div class="skill-percentage" style="width: 58%"></div>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>REACT JS</h3>
+
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <i class="fab fa-react fa-8x" style="color: #61dafb"></i>
+            <h3>React JS</h3>
             <div class="skill-bar">
               <div class="skill-percentage" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <i class="fab fa-node-js fa-8x" style="color: #68a063"></i>
+            <h3>Node JS</h3>
+            <div class="skill-bar">
+              <div class="skill-percentage" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+              alt="C++ Logo"
+              style="width: 110px; height: auto"
+            />
+            <h3>C++</h3>
+            <div class="skill-bar">
+              <div class="skill-percentage" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <!-- ✅ New Skill: Tailwind CSS -->
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind CSS Logo"
+              style="width: 140px; height: auto"
+            />
+            <div style="margin-top: 40px">
+              <h3>Tailwind CSS</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ✅ New Skill: MongoDB -->
+          <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+            <img
+              src="https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png"
+              alt="MongoDB Logo"
+              style="width: 170px; height: auto"
+            />
+            <div style="margin-top: 80px">
+              <h3>MongoDB</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 65%"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -137,12 +212,16 @@
           <h2 class="main-title">Projects</h2>
           <h2 class="hover-title">Projects</h2>
         </div>
-        <div class="scroll-container">
-          <button class="scroll-btn left" onclick="scrollLeft()">
-            &#8249;
-          </button>
-          <div class="portfolio-row">
-            <!-- Project 1 -->
+        <div
+          class="scroll-container"
+          style="
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            gap: 20px;
+          "
+        >
+          <div class="slide">
             <div class="project-card">
               <div
                 class="project-image"
@@ -165,7 +244,8 @@
                   A platform that helps users learn French through interactive
                   Q&A. Features include user and admin roles.
                   <br /><br /><strong>Note:</strong> Account creation and login
-                  might take a moment due to email verification. Try it with an existing Gmail account!
+                  might take a moment due to email verification. Try it with an
+                  existing Gmail account!
                 </p>
                 <a
                   href="https://parler-bleu-client.onrender.com"
@@ -175,8 +255,9 @@
                 >
               </div>
             </div>
+          </div>
 
-            <!-- Project 2 -->
+          <div class="slide">
             <div class="project-card">
               <div
                 class="project-image"
@@ -196,18 +277,18 @@
               <div class="project-content">
                 <h3>Learn C++ Basics Web App</h3>
                 <p>
-                  A platform for learning C++ basics through interactive Q&A. Features include user and admin roles.
-                </p> 
-                <p>
-                  <strong>Note:</strong> Account login credentials are the following: <br/><br/>
-                  <b>User</b><br/>
-                  Email -> user@gmail.com<br/> Password -> 123 <br/></p>
-                <p> 
-                  <b>Admin</b><br/>
-                  Email -> admin@gmail.com<br/> Password -> 123 <br/></p> 
-
+                  A platform for learning C++ basics through interactive Q&A.
+                  Features include user and admin roles.
                 </p>
-
+                <p>
+                  <strong>Note:</strong> Account login credentials are the
+                  following: <br /><br />
+                  <b>User</b><br />Email -> user@gmail.com<br />Password -> 123
+                  <br />
+                  <br />
+                  <b>Admin</b><br />Email -> admin@gmail.com<br />Password ->
+                  123 <br />
+                </p>
                 <a
                   href="https://cs111-web-app-client.onrender.com"
                   class="project-link"
@@ -216,8 +297,9 @@
                 >
               </div>
             </div>
+          </div>
 
-            <!-- Project 3 -->
+          <div class="slide">
             <div class="project-card">
               <div
                 class="project-image"
@@ -236,12 +318,12 @@
               </div>
               <div class="project-content">
                 <h3>Book Blog Post Web App</h3>
-                <p>A platform for posting book blogs. </p>
+                <p>A platform for posting book blogs.</p>
                 <p>
-                  <strong>Note:</strong> Account login credentials are the following: <br/><br/>
-                
-                  Email -> user@gmail.com<br/> Password -> 123 <br/></p>
-                
+                  <strong>Note:</strong> Account login credentials are the
+                  following: <br /><br />
+                  Email -> user@gmail.com<br />Password -> 123 <br />
+                </p>
                 <a
                   href="https://bookblog-client.onrender.com"
                   class="project-link"
@@ -251,9 +333,6 @@
               </div>
             </div>
           </div>
-          <button class="scroll-btn right" onclick="scrollRight()">
-            &#8250;
-          </button>
         </div>
       </div>
     </section>
@@ -269,8 +348,8 @@
           <h3>Contact Me</h3>
           <h3>davidpalavi1502@gmail.com</h3>
           <span
-            >I'm always open to new opportunities and collaborations. Feel
-            free to reach out!</span
+            >I'm always open to new opportunities and collaborations. Feel free
+            to reach out!</span
           >
         </div>
         <div class="social-link">
@@ -305,4 +384,3 @@
     </script>
   </body>
 </html>
-
