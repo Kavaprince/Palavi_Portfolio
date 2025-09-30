@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Explore David Palavi's ePortfolio showcasing web development projects, community impact work, and creative solutions for Japan and Vanuatu."
+    />
+    <meta
+      name="keywords"
+      content="David Palavi, web developer, ePortfolio, HTML, CSS, JavaScript, Japan, Vanuatu, community projects, frontend design"
+    />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="David Palavi Eportfolio" />
+    <meta
+      property="og:description"
+      content="Discover David's work in tech, education, and community impact through a beautifully crafted portfolio."
+    />
+    <meta
+      property="og:image"
+      content="https://
+tinyurl.com/Kavaprince/image/Dave.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://
+tinyurl.com/Kavaprince"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="David Palavi Eportfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore David's projects and impact in Japan and Vanuatu through his personal portfolio."
+    />
+    <meta
+      name="twitter:image"
+      content="https://
+tinyurl.com/Kavaprince/image/Dave.jpg"
+    />
+    <meta name="author" content="David Palavi" />
+    <title>David Palavi Eportfolio</title>
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/ae360af17e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="portfolio-container">
+        <div class="portfolio-row header-wrap">
+          <div class="brand-name">
+            <a href="#" class="logo">David Palavi</a>
+          </div>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="portfolio-navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <!--<li><a href="DP_CV.pdf">Resume</a></li>-->
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sticky Header Script -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+
+    <!-- Hero / Slide Section -->
+    <main>
+      <section id="slide-carousel">
+        <div class="slider">
+          <div class="portfolio-container">
+            <div class="slider-content">
+              <div class="slider-general">
+                <span class="welcome-msg">Welcome to my online home!</span>
+                <div class="welcome-text">
+                  <h1>Hi, I am</h1>
+                  <div class="text-wrap">
+                    <h2 class="main-title">David</h2>
+                    <h2 class="hover-title">David</h2>
+                  </div>
+                  <p>
+                    I'm a software developer from Vanuatu, passionate about
+                    helping people bring their ideas to life through technology.
+                    I build practical tools and websites that support learning,
+                    sharing, and growing—whether for businesses or individuals.
+                    Let's create something meaningful together!
+                  </p>
+
+                  <div class="download-resume">
+                    <a href="#skills" target="_self">Scroll below</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-image">
+                <div class="welcome-image">
+                  <img src="image/Dave.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="portfolio-container">
+          <div class="text-wrap">
+            <h2 class="main-title">Skills</h2>
+            <h2 class="hover-title">Skills</h2>
+          </div>
+
+          <!-- Horizontal scroll container -->
+          <div
+            class="scroll-container"
+            style="
+              overflow-x: auto;
+              white-space: nowrap;
+              display: flex;
+              gap: 20px;
+            "
+          >
+            <!-- Existing Skill Cards -->
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <i class="fab fa-html5 fa-8x" style="color: #e34c26"></i>
+              <h3>HTML5</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <i class="fab fa-css3-alt fa-8x" style="color: #264de4"></i>
+              <h3>CSS3</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <i class="fab fa-js-square fa-8x" style="color: #f0db4f"></i>
+              <h3>JavaScript</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 40%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <i class="fab fa-react fa-8x" style="color: #61dafb"></i>
+              <h3>React JS</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <i class="fab fa-node-js fa-8x" style="color: #68a063"></i>
+              <h3>Node JS</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                alt="C++ Logo"
+                style="width: 110px; height: auto"
+              />
+              <h3>C++</h3>
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <!-- ✅ New Skill: Tailwind CSS -->
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                alt="Tailwind CSS Logo"
+                style="width: 140px; height: auto"
+              />
+              <div style="margin-top: 40px">
+                <h3>Tailwind CSS</h3>
+                <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ✅ New Skill: MongoDB -->
+            <div class="skill-card" style="min-width: 150px; flex-shrink: 0">
+              <img
+                src="https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png"
+                alt="MongoDB Logo"
+                style="width: 170px; height: auto"
+              />
+              <div style="margin-top: 80px">
+                <h3>MongoDB</h3>
+                <div class="skill-bar">
+                  <div class="skill-percentage" style="width: 65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Full Stack Projects Section -->
+      <section id="projects">
+        <div class="portfolio-container">
+          <div class="text-wrap">
+            <h2 class="main-title">Full Stack Projects</h2>
+            <h2 class="hover-title">Full Stack Projects</h2>
+          </div>
+          <div
+            class="scroll-container"
+            style="
+              overflow-x: auto;
+              white-space: nowrap;
+              display: flex;
+              gap: 20px;
+            "
+          >
+            <div class="slide">
+              <div class="project-card">
+                <div
+                  class="project-image"
+                  style="overflow: hidden; width: 100%; height: 200px"
+                >
+                  <iframe
+                    src="https://parler-bleu-client.onrender.com"
+                    style="
+                      width: 1200px;
+                      height: 768px;
+                      transform: scale(0.3);
+                      transform-origin: top left;
+                      border: none;
+                    "
+                  ></iframe>
+                </div>
+                <div class="project-content">
+                  <h3>Learn French Web App</h3>
+                  <p>
+                    A platform that helps users learn French through interactive
+                    Q&A. Features include user and admin roles.
+                    <br /><br /><strong>Note:</strong> Account creation and
+                    login might take a moment due to email verification. Try it
+                    with an existing Gmail account!
+                  </p>
+                  <a
+                    href="https://parler-bleu-client.onrender.com"
+                    class="project-link"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="project-card">
+                <div
+                  class="project-image"
+                  style="overflow: hidden; width: 100%; height: 200px"
+                >
+                  <iframe
+                    src="https://cs111-web-app-client.onrender.com"
+                    style="
+                      width: 1200px;
+                      height: 768px;
+                      transform: scale(0.3);
+                      transform-origin: top left;
+                      border: none;
+                    "
+                  ></iframe>
+                </div>
+                <div class="project-content">
+                  <h3>Learn C++ Basics Web App</h3>
+                  <p>
+                    A platform for learning C++ basics through interactive Q&A.
+                    Features include user and admin roles.
+                  </p>
+                  <p>
+                    <strong>Note:</strong> Account login credentials are the
+                    following: <br /><br />
+                    <b>User</b><br />Email -> user@gmail.com<br />Password ->
+                    123
+                    <br />
+                    <br />
+                    <b>Admin</b><br />Email -> admin@gmail.com<br />Password ->
+                    123 <br />
+                  </p>
+                  <a
+                    href="https://cs111-web-app-client.onrender.com"
+                    class="project-link"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="project-card">
+                <div
+                  class="project-image"
+                  style="overflow: hidden; width: 100%; height: 200px"
+                >
+                  <iframe
+                    src="https://bookblog-client.onrender.com"
+                    style="
+                      width: 1200px;
+                      height: 768px;
+                      transform: scale(0.3);
+                      transform-origin: top left;
+                      border: none;
+                    "
+                  ></iframe>
+                </div>
+                <div class="project-content">
+                  <h3>Book Blog Post Web App</h3>
+                  <p>A platform for posting book blogs.</p>
+                  <p>
+                    <strong>Note:</strong> Account login credentials are the
+                    following: <br /><br />
+                    Email -> user@gmail.com<br />Password -> 123 <br />
+                  </p>
+                  <a
+                    href="https://bookblog-client.onrender.com"
+                    class="project-link"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Website Projects Section -->
+      <section id="projects">
+        <div class="portfolio-container">
+          <div class="text-wrap">
+            <h2 class="main-title">Website Projects</h2>
+            <h2 class="hover-title">Website Projects</h2>
+          </div>
+          <div
+            class="scroll-container"
+            style="
+              overflow-x: auto;
+              white-space: nowrap;
+              display: flex;
+              gap: 20px;
+            "
+          >
+            <div class="slide">
+              <div class="project-card">
+                <div
+                  class="project-image"
+                  style="overflow: hidden; width: 100%; height: 200px"
+                >
+                  <iframe
+                    src="https://kanekofamily.netlify.app/"
+                    style="
+                      width: 1200px;
+                      height: 768px;
+                      transform: scale(0.3);
+                      transform-origin: top left;
+                      border: none;
+                    "
+                  ></iframe>
+                </div>
+                <div class="project-content">
+                  <h3>Family Website</h3>
+                  <a
+                    href="https://kanekofamily.netlify.app/"
+                    class="project-link"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="project-card">
+                <div
+                  class="project-image"
+                  style="overflow: hidden; width: 100%; height: 200px"
+                >
+                  <iframe
+                    src="https://palavi-tech-studio.netlify.app/"
+                    style="
+                      width: 1200px;
+                      height: 768px;
+                      transform: scale(0.3);
+                      transform-origin: top left;
+                      border: none;
+                    "
+                  ></iframe>
+                </div>
+                <div class="project-content">
+                  <h3>Buisiness Website</h3>
+                  <a
+                    href="https://palavi-tech-studio.netlify.app/"
+                    class="project-link"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer>
+      <section id="contact">
+        <div class="portfolio-container">
+          <div class="text-wrap">
+            <h2 class="main-title">Stay Connected</h2>
+            <h2 class="hover-title">Stay Connected</h2>
+          </div>
+          <div class="contact-info">
+            <h3>Contact Me</h3>
+            <h3>davidpalavi1502@gmail.com</h3>
+            <span
+              >I'm always open to new opportunities and collaborations. Feel
+              free to reach out!</span
+            >
+          </div>
+          <div class="social-link">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/palavi.david/"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/678kava_prince/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/david-palavipaongo-3b6584250/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function () {
+        document.querySelector(".portfolio-navbar").classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
