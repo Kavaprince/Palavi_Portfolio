@@ -84,6 +84,24 @@ header .portfolio-row.header-wrap {
   align-items: center;
 }
 
+select {
+  background-color: var(--bg-color1);
+  color: var(--color1);
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+select option {
+  background-color: var(--bg-color1);
+  color: var(--color1);
+}
+
+select option:hover {
+  background-color: #ff5252;
+}
+
 .brand-name a {
   font-size: 1.5rem;
   font-weight: 500;

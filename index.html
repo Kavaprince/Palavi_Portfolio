@@ -72,18 +72,24 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
       <div class="portfolio-container">
         <div class="portfolio-row header-wrap">
           <div class="brand-name">
-            <a href="#" class="logo">David Palavi</a>
+            <a href="#" class="logo" data-key="david.palavi">David Palavi</a>
           </div>
           <div class="hamburger">
             <i class="fa-solid fa-bars"></i>
           </div>
+          <select id="lang-switcher">
+            <option value="en" selected>English</option>
+            <option value="bi">Bislama</option>
+            <option value="fr">Français</option>
+            <option value="jp">日本語</option>
+          </select>
           <div class="portfolio-navbar">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="index.html" data-key="nav.home">Home</a></li>
+              <li><a href="#skills" data-key="nav.skills">Skills</a></li>
+              <li><a href="#projects" data-key="nav.projects">Projects</a></li>
               <!--<li><a href="DP_CV.pdf">Resume</a></li>-->
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact" data-key="nav.contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -105,14 +111,16 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
           <div class="portfolio-container">
             <div class="slider-content">
               <div class="slider-general">
-                <span class="welcome-msg">Welcome to my online home!</span>
+                <span class="welcome-msg" data-key="welcome"
+                  >Welcome to my online home!</span
+                >
                 <div class="welcome-text">
-                  <h1>Hi, I am</h1>
+                  <h1 data-key="iam">Hi, I am</h1>
                   <div class="text-wrap">
-                    <h2 class="main-title">David</h2>
-                    <h2 class="hover-title">David</h2>
+                    <h2 class="main-title" data-key="david">David</h2>
+                    <h2 class="hover-title" data-key="david">David</h2>
                   </div>
-                  <p>
+                  <p data-key="intro">
                     I'm a software developer from Vanuatu, passionate about
                     helping people bring their ideas to life through technology.
                     I build practical tools and websites that support learning,
@@ -121,7 +129,9 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
                   </p>
 
                   <div class="download-resume">
-                    <a href="#skills" target="_self">Scroll below</a>
+                    <a href="#skills" target="_self" data-key="scroll.below"
+                      >Scroll below</a
+                    >
                   </div>
                 </div>
               </div>
@@ -139,8 +149,8 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
       <section id="skills">
         <div class="portfolio-container">
           <div class="text-wrap">
-            <h2 class="main-title">Skills</h2>
-            <h2 class="hover-title">Skills</h2>
+            <h2 class="main-title" data-key="skills">Skills</h2>
+            <h2 class="hover-title" data-key="skills">Skills</h2>
           </div>
 
           <!-- Horizontal scroll container -->
@@ -243,8 +253,8 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
       <section id="projects">
         <div class="portfolio-container">
           <div class="text-wrap">
-            <h2 class="main-title">Full Stack Projects</h2>
-            <h2 class="hover-title">Full Stack Projects</h2>
+            <h2 class="main-title" data-key="full.stack">Full Stack</h2>
+            <h2 class="hover-title" data-key="full.stack">Full Stack</h2>
           </div>
           <div
             class="scroll-container"
@@ -273,8 +283,8 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
                   ></iframe>
                 </div>
                 <div class="project-content">
-                  <h3>Learn French Web App</h3>
-                  <p>
+                  <h3 data-key="learn.french">Learn French Web App</h3>
+                  <p data-key="learn.french.desc">
                     A platform that helps users learn French through interactive
                     Q&A. Features include user and admin roles.
                     <br /><br /><strong>Note:</strong> Account creation and
@@ -285,6 +295,7 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
                     href="https://parler-bleu-client.onrender.com"
                     class="project-link"
                     target="_blank"
+                    data-key="view.project"
                     >View Project</a
                   >
                 </div>
@@ -309,12 +320,12 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
                   ></iframe>
                 </div>
                 <div class="project-content">
-                  <h3>Learn C++ Basics Web App</h3>
-                  <p>
+                  <h3 data-key="learn.c++">Learn C++ Basics Web App</h3>
+                  <p data-key="learn.c++.desc">
                     A platform for learning C++ basics through interactive Q&A.
                     Features include user and admin roles.
                   </p>
-                  <p>
+                  <p data-key="learn.c++.note">
                     <strong>Note:</strong> Account login credentials are the
                     following: <br /><br />
                     <b>User</b><br />Email -> user@gmail.com<br />Password ->
@@ -328,41 +339,7 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
                     href="https://cs111-web-app-client.onrender.com"
                     class="project-link"
                     target="_blank"
-                    >View Project</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="slide">
-              <div class="project-card">
-                <div
-                  class="project-image"
-                  style="overflow: hidden; width: 100%; height: 200px"
-                >
-                  <iframe
-                    src="https://bookblog-client.onrender.com"
-                    style="
-                      width: 1200px;
-                      height: 768px;
-                      transform: scale(0.3);
-                      transform-origin: top left;
-                      border: none;
-                    "
-                  ></iframe>
-                </div>
-                <div class="project-content">
-                  <h3>Book Blog Post Web App</h3>
-                  <p>A platform for posting book blogs.</p>
-                  <p>
-                    <strong>Note:</strong> Account login credentials are the
-                    following: <br /><br />
-                    Email -> user@gmail.com<br />Password -> 123 <br />
-                  </p>
-                  <a
-                    href="https://bookblog-client.onrender.com"
-                    class="project-link"
-                    target="_blank"
+                    data-key="view.project"
                     >View Project</a
                   >
                 </div>
@@ -376,8 +353,8 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
       <section id="projects">
         <div class="portfolio-container">
           <div class="text-wrap">
-            <h2 class="main-title">Website Projects</h2>
-            <h2 class="hover-title">Website Projects</h2>
+            <h2 class="main-title" data-key="website">Websites</h2>
+            <h2 class="hover-title" data-key="website">Websites</h2>
           </div>
           <div
             class="scroll-container"
@@ -406,11 +383,12 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
                   ></iframe>
                 </div>
                 <div class="project-content">
-                  <h3>Family Website</h3>
+                  <h3 data-key="family">Family Website</h3>
                   <a
                     href="https://kanekofamily.netlify.app/"
                     class="project-link"
                     target="_blank"
+                    data-key="view.project"
                     >View Project</a
                   >
                 </div>
@@ -435,11 +413,12 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
                   ></iframe>
                 </div>
                 <div class="project-content">
-                  <h3>Buisiness Website</h3>
+                  <h3 data-key="buisiness">Buisiness Website</h3>
                   <a
                     href="https://palavi-tech-studio.netlify.app/"
                     class="project-link"
                     target="_blank"
+                    data-key="view.project"
                     >View Project</a
                   >
                 </div>
@@ -455,13 +434,13 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
       <section id="contact">
         <div class="portfolio-container">
           <div class="text-wrap">
-            <h2 class="main-title">Stay Connected</h2>
-            <h2 class="hover-title">Stay Connected</h2>
+            <h2 class="main-title" data-key="connect">Stay Connected</h2>
+            <h2 class="hover-title" data-key="connect">Stay Connected</h2>
           </div>
           <div class="contact-info">
-            <h3>Contact Me</h3>
+            <h3 data-key="contact.me">Contact Me</h3>
             <h3>davidpalavi1502@gmail.com</h3>
-            <span
+            <span data-key="contact.intro"
               >I'm always open to new opportunities and collaborations. Feel
               free to reach out!</span
             >
@@ -471,20 +450,28 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
             action="https://formspree.io/f/mgvnyzzl"
             method="POST"
           >
-            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              data-key="form.name_placeholder"
+              required
+            />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
+              data-key="form.email_placeholder"
               required
             />
             <textarea
               name="message"
               placeholder="Your Message"
               rows="5"
+              data-key="form.message_placeholder"
               required
             ></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit" data-key="send.msg">Send Message</button>
           </form>
 
           <div class="social-link">
@@ -518,5 +505,7 @@ tinyurl.com/Kavaprince/image/Dave.jpg"
         document.querySelector(".portfolio-navbar").classList.toggle("show");
       });
     </script>
+
+    <script src="js/translations.js"></script>
   </body>
 </html>
